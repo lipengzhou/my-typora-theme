@@ -1,0 +1,56 @@
+/**
+ * author: LPZ
+ * email: lpzmail@163.com
+ */
+
+/*h1, h2, h3, h4, strong {
+  font-weight: 600;
+}*/
+
+/* 自定义强制换号符，使得在导出PDF 或打印时强制换行 */
+@media print {
+
+  /* 这是自定义标签, 在需要换行的地方插入：<pb> */
+  pb {
+    display: block;
+    page-break-after: always;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  h1:first-of-type {
+    page-break-before: avoid;
+  }
+}
+
+/* 完成的 Task 添加删除线 */
+.task-list-done {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-list-not-done {}
+
+/* 添加键盘样式 */
+kbd {
+  box-shadow: inset 0 -2px 0 #c6cbd1;
+  background-color: white;
+}
+
+/* 隐藏标题栏中的文本信息 */
+#title-text {
+  visibility: hidden;
+}
+
+#title-text::after {
+  visibility: visible;
+}
+
+/*#write h3:before,
+#write h4:before,
+#write h5:before,
+#write h6:before {
+  display: none;
+}*/
