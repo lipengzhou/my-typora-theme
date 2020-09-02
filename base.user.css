@@ -54,3 +54,12 @@ kbd {
 #write h6:before {
   display: none;
 }*/
+
+.outline-item {
+  line-height: 2;
+}
+
+.typora-node #write {
+  top: 20px;
+  bottom: 20px;
+}
